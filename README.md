@@ -1,4 +1,4 @@
-# Artifact-Repository-Manager-with-Nexus
+# Lesson 6 - Artifact-Repository-Manager-with-Nexus
 ***DevOps Techworld with nana***
 
 ## Project Description
@@ -19,5 +19,16 @@
 - [x] created new role _nx-java_ (set of privileges)
 - [x] granted new User with role _nx-java_
 
-## Publishing artifacts from Maven
+## Configuring, Building and, Publishing artifacts from Gradle / Maven
+### Maven-based Java project _java-maven-app_
+- [x] Maven-based Java project `pom.xml` configuration file (artifact (groupID, artifactID, version), plugin `maven-deploy-plugin`, snapshotRepository url)
+- [x] Maven configuration file `.m2/settings.xml` for id, username and password
+- [x] Built artifact JAR file via `mvn package` command
+- [x] Published JAR file via `mvn deploy` command
 
+### Gradle-based Java project _java-app_
+- [x] Gradle-based Java project `build.gradle` configuration file (artifact location, file type, targeted repository url, allowInsecureProtocol, credentials)
+- [x] Gradle configuration file `settings.gradle` for project name
+- [x] Gradle configuration file `gradle.properties` username / password
+- [x] Built JAR fil via `gradle build` command
+- [x] Published JAR file via `gradle publish` command

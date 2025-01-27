@@ -32,3 +32,17 @@
 - [x] Gradle configuration file `gradle.properties` username / password
 - [x] Built JAR fil via `gradle build` command
 - [x] Published JAR file via `gradle publish` command
+      
+## API
+- [x] Identified location APIs available on Nexus at `http://x.x.x.x:8081/#admin/system/api`
+
+## Blob configuration
+- [x] Created Blob of file type named `mystore`
+- [x] `mystore` is not associated to a repository because association is permanent.  No repo to configure at this time
+
+## Cleanup policies and task
+- [x] Created `maven` cleanup policy as soft delete job, find .* (all), preview to repo `maven-snapshots` identified two (2) artifacts to soft delete.
+- [x] Applied `maven` cleanup policy to reposititory `maven-snapshots`
+- [x] Task `Cleanup service` deleted.
+- [x] Task `compact-maven` created as permanent deletion of artifacts
+- [x] Task `compact-maven` deleted for badge certification at TWN 
